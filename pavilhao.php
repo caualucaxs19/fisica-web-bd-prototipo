@@ -14,23 +14,33 @@
         <div class="container">
             <h1>2º pavilhão</h1>
         </div>
-        <p>Selecione uma sala abaixo</p>
+        <nav>
+        <p class="titulo">Selecione uma sala abaixo</p>
+        </nav>
 
         <div class="pavilhao-todo">
         <div class="menu-salas">
             <button class="tab-btn active" onclick="mudarSala(event, 'sala1')"> Sala 1 </button>
             <button class="tab-btn" onclick="mudarSala(event, 'sala2')"> Sala 2 </button>
             <button class="tab-btn" onclick="mudarSala(event, 'sala3')"> Sala 3 </button>
+            <button class="tab-btn" onclick="mudarSala(event, 'sala4')"> Sala 4 </button>
+            <button class="tab-btn" onclick="mudarSala(event, 'sala5')"> Sala 5 </button>
+            <button class="tab-btn" onclick="mudarSala(event, 'sala6')"> Sala 6 </button>
+            <button class="tab-btn" onclick="mudarSala(event, 'sala7')"> Sala 7 </button>
         </div>
 
         <div id="sala1" class="conteudo-sala" style="display: block;">
-            <h3>SALA 1</h3>
-            <p>Estado do ar, tomada etc</p>
-        </div>
+                <p class="aviso"> ⚠ Ar-condicionado 002003 não funciona</p>
+                    <div class="visual">
+                 <img src="OIP.jpg" alt="visual" class="visual">
+                </div>
+            
+            </div>
         <div id="sala2" class="conteudo-sala" style="display: none;">
             <h3>SALA 2</h3>
-            <p>Estado do ar, tomada etc
-                AR nao funciona
+            <p> 8 lampadas
+                2 ventiladores Ventisol
+                1 TV
             </p>
         </div>
         <div id="sala3" class="conteudo-sala" style="display: none;">
