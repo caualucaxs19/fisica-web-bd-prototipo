@@ -44,8 +44,8 @@ CREATE TABLE equipamento (
     capacidade_btu INT,
     tensao_v INT,
     potencia_w INT,
-    status_atual CHAR,
-    CHECK (status_atual in (Ativo, Inativo, Defeito)),
+    status_atual CHAR
+    CHECK (status_atual in ("Ativo, Inativo, Defeito")),
 
     PRIMARY KEY (id_equipamento)
 );
@@ -101,8 +101,8 @@ CREATE TABLE manutencao (
     id_equipamento INT NOT NULL, 
     id_usuario INT NOT NULL,
     data_manutencao DATE,
-    tipo CHAR,
-    CHECK (tipo in (Preventiva, Corretiva)),
+    tipo CHAR
+    CHECK (tipo in ("Preventiva, Corretiva")),
     descricao_servico TEXT,
     custo FLOAT,
     proxima_manutencao DATE,
