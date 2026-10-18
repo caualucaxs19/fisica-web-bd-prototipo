@@ -2,6 +2,12 @@ CREATE DATABASE projeto_IFBA;
 
 USE projeto_IFBA;
 
+CREATE TABLE Bloco (
+    id_bloco INT NOT NULL,
+
+    PRIMARY KEY (id_bloco)
+);
+
 CREATE TABLE usuario (
     id_usuario INT NOT NULL,
     data_cadastro DATE,
@@ -29,6 +35,7 @@ CREATE TABLE administrador (
 
 CREATE TABLE sala (
     id_sala INT NOT NULL,
+    id_bloco INT,
     codigo_sala INT,
     bloco INT,
     andar INT,
@@ -36,7 +43,8 @@ CREATE TABLE sala (
     area_m2 FLOAT,
     capacidade_pessoas INT,
 
-    PRIMARY KEY (id_sala)
+    PRIMARY KEY (id_sala),
+    FOREIGN KEY (id_bloco) REFERENCES Bloco (id_bloco)
 );
 
 CREATE TABLE equipamento (
