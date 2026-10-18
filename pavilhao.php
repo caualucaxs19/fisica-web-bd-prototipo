@@ -17,8 +17,10 @@
         <nav>
         <p class="titulo">Selecione uma sala abaixo</p>
         </nav>
+</header>
 
-        <div class="pavilhao-todo">
+<body>
+    <div class="principal">
         <div class="menu-salas">
             <button class="tab-btn active" onclick="mudarSala(event, 'sala1')"> Sala 1 </button>
             <button class="tab-btn" onclick="mudarSala(event, 'sala2')"> Sala 2 </button>
@@ -27,28 +29,136 @@
             <button class="tab-btn" onclick="mudarSala(event, 'sala5')"> Sala 5 </button>
             <button class="tab-btn" onclick="mudarSala(event, 'sala6')"> Sala 6 </button>
             <button class="tab-btn" onclick="mudarSala(event, 'sala7')"> Sala 7 </button>
+            <button class="tab-btn" onclick="mudarSala(event, 'sala8')"> Sala 8 </button>
         </div>
 
         <div id="sala1" class="conteudo-sala" style="display: block;">
-                <p class="aviso"> ⚠ Ar-condicionado 002003 não funciona</p>
-                    <div class="visual">
-                 <img src="OIP.jpg" alt="visual" class="visual">
+            <div class="interno-flex">
+                <div class="imagem">
+                <img src="OIP.jpg" alt="visual" class="visual">
+                </div>
+                 
+                 <div class="ir-forms">
+                <a href="" class="opcoes-form">Fazer alocações</a> <br>
+                <a href="" class="opcoes-form">Registrar manutenção</a> <br>
+                <a href="mostrardados.php?sala=1" class="opcoes-form">Ver dados</a>
+                 </div>
+                 
+                
                 </div>
             
             </div>
         <div id="sala2" class="conteudo-sala" style="display: none;">
-            <h3>SALA 2</h3>
-            <p> 8 lampadas
-                2 ventiladores Ventisol
-                1 TV
-            </p>
+            <div class="interno-flex">
+                <div class="imagem">
+                <img src="OIP.jpg" alt="visual" class="visual">
+                </div>
+                 
+                 <div class="ir-forms">
+                <a href="" class="opcoes-form">Fazer alocações</a> <br>
+                <a href="" class="opcoes-form">Registrar manutenção</a> <br>
+                <a href="mostrardados.php?sala=2" class="opcoes-form">Ver dados</a>
+                 </div>
+                 
+                
+                </div>
+        
         </div>
         <div id="sala3" class="conteudo-sala" style="display: none;">
-            <h3>SALA 3</h3>
-            <p>Estado do ar, tomada etc</p>
+            <div class="interno-flex">
+                <div class="imagem">
+                <img src="OIP.jpg" alt="visual" class="visual">
+                </div>
+                 
+                 <div class="ir-forms">
+                <a href="" class="opcoes-form">Fazer alocações</a> <br>
+                <a href="" class="opcoes-form">Registrar manutenção</a> <br>
+                <a href="mostrardados.php?sala=3" class="opcoes-form">Ver dados</a>
+                 </div>
+                 
+                
+                </div>
+        </div>
+
+        <div id="sala4" class="conteudo-sala" style="display: none;">
+            <div class="interno-flex">
+                <div class="imagem">
+                <img src="OIP.jpg" alt="visual" class="visual">
+                </div>
+                 
+                 <div class="ir-forms">
+                <a href="" class="opcoes-form">Fazer alocações</a> <br>
+                <a href="" class="opcoes-form">Registrar manutenção</a> <br>
+                <a href="mostrardados.php?sala=4" class="opcoes-form">Ver dados</a>
+                 </div>
+                 
+                
+                </div>
+        </div>
+<div id="sala5" class="conteudo-sala" style="display: none;">
+            <div class="interno-flex">
+                <div class="imagem">
+                <img src="OIP.jpg" alt="visual" class="visual">
+                </div>
+                 
+                 <div class="ir-forms">
+                <a href="" class="opcoes-form">Fazer alocações</a> <br>
+                <a href="" class="opcoes-form">Registrar manutenção</a> <br>
+                <a href="mostrardados.php?sala=5" class="opcoes-form">Ver dados</a>
+                 </div>
+                 
+                
+                </div>
+        </div>
+        <div id="sala6" class="conteudo-sala" style="display: none;">
+            <div class="interno-flex">
+                <div class="imagem">
+                <img src="OIP.jpg" alt="visual" class="visual">
+                </div>
+                 
+                 <div class="ir-forms">
+                <a href="" class="opcoes-form">Fazer alocações</a> <br>
+                <a href="" class="opcoes-form">Registrar manutenção</a> <br>
+                <a href="mostrardados.php?sala=6" class="opcoes-form">Ver dados</a>
+                 </div>
+                 
+                
+                </div>
+        </div>
+
+        <div id="sala7" class="conteudo-sala" style="display: none;">
+            <div class="interno-flex">
+                <div class="imagem">
+                <img src="OIP.jpg" alt="visual" class="visual">
+                </div>
+                 
+                 <div class="ir-forms">
+                <a href="" class="opcoes-form">Fazer alocações</a> <br>
+                <a href="" class="opcoes-form">Registrar manutenção</a> <br>
+                <a href="mostrardados.php?sala=7" class="opcoes-form">Ver dados</a>
+                 </div>
+                 
+                
+                </div>
+        </div>
+
+        <div id="sala8" class="conteudo-sala" style="display: none;">
+            <div class="interno-flex">
+                <div class="imagem">
+                <img src="OIP.jpg" alt="visual" class="visual">
+                </div>
+                 
+                 <div class="ir-forms">
+                <a href="" class="opcoes-form">Fazer alocações</a> <br>
+                <a href="" class="opcoes-form">Registrar manutenção</a> <br>
+                <a href="mostrardados.php?sala=8" class="opcoes-form">Ver dados</a>
+                 </div>
+                 
+                
+                </div>
         </div>
         </div>
-</header>
+    </body>
     
 <script src="script.js"></script>
 </body>

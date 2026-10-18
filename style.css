@@ -87,6 +87,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
+    
 }
 
 .opcoes {
@@ -129,9 +131,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-     max-height: 400px;
+     max-height: 450px;
     overflow-y: auto;
     padding-right: 15px;
+    width: 300px;
+    gap: 10px;
+    flex-shrink: 0;
 }
 
 .pavilhao-todo {
@@ -145,16 +150,7 @@ body {
     font-size: 30px;
 }
 
-.aviso {
-    background-color: rgb(238, 238, 145);
-    margin-top: 20px;
-    padding: 20px;
-    box-shadow: 0px 2px 8px darkgoldenrod;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 20px;
-    margin-bottom: 25px;
-}
+
 
 .equipamentos {
     font-size: 26px;
@@ -167,15 +163,129 @@ body {
 }
 
 .visual {
-    width: 600px;
+    width: 550px;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+    flex: 1;
+    min-width: 200px;
     
     
 }
 
 .ir-forms {
-    background-color: gray;
-    margin-top: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
 }
+
+.ir-forms a {
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgb(92, 12, 1);
+    color: antiquewhite;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgb(82, 29, 29);
+}
+
+.conteudo-sala {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.conteudo-sala .interno-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.conteudo-sala .imagem {
+    max-width: 550px;
+    width: 100%;
+}
+
+table {
+     width: 100%;
+     max-width: 1200px;
+     border-collapse: collapse;
+     background-color: #ffffff;
+     border-radius: 8px;
+     overflow: hidden;
+     /* Garante que o border-radius funcione nas bordas */
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+     margin: 1.5rem 0;
+     font-size: 0.95rem;
+     color: #2d3748;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ /* Cabeçalho da Tabela (th) */
+ th {
+     background-color: #6b1414;
+     /* Cor primária do projeto */
+     color: #ffffff;
+     text-align: left;
+     padding: 1rem;
+     font-weight: 600;
+     letter-spacing: 0.5px;
+     text-transform: uppercase;
+     font-size: 0.85rem;
+ }
+
+ /* Células de Dados (td) */
+ td {
+     padding: 1rem;
+     border-bottom: 1px solid #edf2f7;
+     /* Borda suave e neutra */
+     vertical-align: middle;
+ }
+
+ /* Linhas da Tabela (tr) com efeito Zebra Striping */
+ tr:nth-child(even) {
+     background-color: #f7fafc;
+     /* Fundo alternado nas linhas pares */
+ }
+
+ /* Efeito Hover ao passar o mouse */
+ tr:hover {
+     background-color: #edf2f7;
+     transition: background-color 0.2s ease-in-out;
+ }
+
+ /* Remove a borda da última linha para um acabamento profissional */
+ tr:last-child td {
+     border-bottom: none;
+ }
+
+ /* Utilitário opcional para centralizar colunas de ações ou IDs */
+ td.centralizado,
+ th.centralizado {
+     text-align: center;
+ }
+
+ h2 {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #420d0d;
+    color: antiquewhite;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 8px;
+ }
