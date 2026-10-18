@@ -37,9 +37,8 @@ CREATE TABLE sala (
     id_sala INT NOT NULL,
     id_bloco INT,
     codigo_sala INT,
-    bloco INT,
     andar INT,
-    tipo_ambiente CHAR,
+    tipo_ambiente VARCHAR(50),
     area_m2 FLOAT,
     capacidade_pessoas INT,
 
@@ -52,35 +51,35 @@ CREATE TABLE equipamento (
     capacidade_btu INT,
     tensao_v INT,
     potencia_w INT,
-    status_atual CHAR
-    CHECK (status_atual in ("Ativo, Inativo, Defeito")),
+    status_atual VARCHAR(50)
+    CHECK (status_atual in ("Ativo", "Inativo", "Defeito")),
 
     PRIMARY KEY (id_equipamento)
 );
 
 CREATE TABLE ar_condicionado (
     id_equipamento INT NOT NULL,
-    modelo CHAR,
-    numero_serie INT,
-    marca CHAR,
+    modelo_ar VARCHAR(50),
+    numero_serie_ar INT,
+    marca_ar VARCHAR(50),
 
     FOREIGN KEY (id_equipamento) REFERENCES equipamento (id_equipamento)
 );
 
 CREATE TABLE televisao (
     id_equipamento INT NOT NULL,
-    modelo CHAR,
-    numero_serie INT,
-    marca CHAR,
+    modelo_tv VARCHAR(50),
+    numero_serie_tv INT,
+    marca_tv VARCHAR(50),
 
     FOREIGN KEY (id_equipamento) REFERENCES equipamento (id_equipamento)
 );
 
 CREATE TABLE ventilador (
     id_equipamento INT NOT NULL,
-    modelo CHAR,
-    numero_serie INT,
-    marca CHAR,
+    modelo_vent VARCHAR(50),
+    numero_serie_vent INT,
+    marca_vent VARCHAR(50),
 
     FOREIGN KEY (id_equipamento) REFERENCES equipamento (id_equipamento)
 );
@@ -97,7 +96,7 @@ CREATE TABLE alocacao (
     id_sala INT NOT NULL,
     data_instalacao DATE,
     data_remocao DATE,
-    status_alocacao CHAR,
+    status_alocacao VARCHAR(50),
 
     PRIMARY KEY (id_alocacao),
     FOREIGN KEY (id_equipamento) REFERENCES equipamento (id_equipamento),
@@ -109,8 +108,8 @@ CREATE TABLE manutencao (
     id_equipamento INT NOT NULL, 
     id_usuario INT NOT NULL,
     data_manutencao DATE,
-    tipo CHAR
-    CHECK (tipo in ("Preventiva, Corretiva")),
+    tipo VARCHAR(50)
+    CHECK (tipo in ("Preventiva", "Corretiva")),
     descricao_servico TEXT,
     custo FLOAT,
     proxima_manutencao DATE,
